@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+/* Estilos formales pero orgánicos */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #f5f5dc 0%, #ffffff 30%, #f0fdf4 100%);
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .formal-gradient-text {
+    background: linear-gradient(135deg, #1e3a3a, #2d5016, #4a5d23);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .professional-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formal-button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+  }
+  
+  .formal-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+   .organic-accent {
+    background: linear-gradient(135deg, #4a5d23, #2d5016);
+  }
+  
+  .earth-accent {
+    background: linear-gradient(135deg, #8b4513, #a0522d);
+  }
+  
+  .natural-shadow {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08), 0 3px 8px rgba(0, 0, 0, 0.04);
+  }
+  
+  .organic-glow {
+    box-shadow: 0 0 20px rgba(74, 93, 35, 0.25), 0 0 35px rgba(74, 93, 35, 0.15);
+  }
+  
+  .section-divider {
+    background: linear-gradient(90deg, transparent, #4a5d23, transparent);
+    height: 1px;
+    margin: 3rem 0;
+  }
+}
